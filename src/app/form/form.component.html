@@ -1,0 +1,22 @@
+<div action="" class="form">
+    <div class="form-input">
+        <label for="article_title">Título</label>
+        <input type="text" id="article_title" placeholder="Título de la noticia"  required [(ngModel)]="newEntry.title"/>
+    </div>
+    <div class="form-input">
+        <label for="img_url">Imagen</label>
+        <input type="url" id="img_url" placeholder="Selecciona la URL de la imagen"  required [(ngModel)]="newEntry.url"/>
+    </div>
+    <div class="form-input form-input_body">
+        <label for="article_body">Cuerpo de la noticia</label>
+        <textarea type="text" id="article_body" placeholder="Cuerpo de la noticia"  required [(ngModel)]="newEntry.body"> </textarea>
+    </div>
+    <div class="form-input">
+        <label for="article_date">Fecha</label>
+        <input type="date" id="article_date" placeholder="dd/mm/yy" required [(ngModel)]="newEntry.date"/>
+    </div>
+    <div class="btn-wrap">
+        <button class="btn" (click)="publish()">Publicar</button>
+    </div>
+</div>
+

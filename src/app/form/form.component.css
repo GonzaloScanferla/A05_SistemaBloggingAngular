@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.form-input{
+    padding: 6px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-input input {
+    flex-grow: 1;
+    max-width: 80%;
+}
+
+.form-input label {
+    font-size: var(--FS_S);
+    font-weight: var(--FW_XLight);
+}
+
+.form-input_body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#article_body {
+    max-width: 100%;
+    height: 5rem;
+    overflow-y: scroll;
+}
+.btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn {
+    margin: 8px 0 20px 0;
+    width: 100px;
+    padding: 8px 12px;
+    border-radius: 5px; 
+    font-family: var(--F_Roboto);
+    font-weight: var(--FW_Light);
+    font-size: var(--FS_S);
+    color: rgb(58, 58, 58);
+}
+
+
