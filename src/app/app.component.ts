@@ -29,7 +29,7 @@ export class AppComponent {
   ]
 
   // Función que añade al array de noticias las nuevas publicaciones añadidas mediante el formulario
-  publishNewEntry($event:any) : void {
+  publishNewEntry($event:IEntry) : void {
     this.arrBlogEntries.push ($event)
   }
 }
