@@ -12,6 +12,7 @@ import { FormComponent } from './form/form.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  // se crea un array para inicializar las noticias del blog
   arrBlogEntries : IEntry[] = [
     {
       title : "Título 1",
@@ -27,6 +28,7 @@ export class AppComponent {
     },
   ]
 
+  // Función que añade al array de noticias las nuevas publicaciones añadidas mediante el formulario
   publishNewEntry($event:any) : void {
     this.arrBlogEntries.push ($event)
   }

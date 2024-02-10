@@ -15,6 +15,7 @@ export class BlogComponent{
     this.cargarDatos()
   }
 
+  // inicialización del blog con la carga de las noticias de arrBlogEntries
   cargarDatos(): string {
     let html = ""
     this.entries.forEach (entry => {

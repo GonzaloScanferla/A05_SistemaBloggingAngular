@@ -5,10 +5,10 @@
   </header>
   <app-blog [entries]="arrBlogEntries" ></app-blog>
 </section>
-<section  class="news-wrap">
+<aside  class="news-wrap">
   <h3>Añade una entrada</h3>
   <app-form (sendNewEntry)="publishNewEntry($event)"></app-form>
-</section>
+</aside>
 
 <router-outlet />
 

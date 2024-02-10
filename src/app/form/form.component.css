@@ -12,6 +12,8 @@
 .form-input input {
     flex-grow: 1;
     max-width: 80%;
+    border-radius: 5px;
+    padding: 1px 4px;
 }
 
 .form-input label {
@@ -25,9 +27,11 @@
     width: 100%;
 }
 #article_body {
+    padding: 1px 4px;
     max-width: 100%;
     height: 5rem;
     overflow-y: scroll;
+    border-radius: 5px;
 }
 .btn-wrap {
     display: flex;
@@ -42,6 +46,10 @@
     font-weight: var(--FW_Light);
     font-size: var(--FS_S);
     color: rgb(58, 58, 58);
+    border: none;
+    &:hover {
+        transform: scale(110%);
+        background-color:steelblue;
+    }
 }
-
 

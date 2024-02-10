@@ -17,6 +17,7 @@ export class FormComponent {
     date: ""
   }
 
+  // output para el envio del evento publish que envía los datos del form al array de noticias
   @Output() sendNewEntry : EventEmitter<IEntry> = new EventEmitter ()
 
   publish () : void {
@@ -27,7 +28,7 @@ export class FormComponent {
     }
   }
 
-  // 
+  // Función para comprobar que todos los campos del formulario se han rellenado correctamente
   verifyNewEntry() : boolean {
     const {title, url, body, date} = this.newEntry
     return (title.length > 0 && url.length > 0 && body.length > 0 && date.length > 0)

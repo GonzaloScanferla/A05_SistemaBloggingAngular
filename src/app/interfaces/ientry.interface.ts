@@ -1,3 +1,4 @@
+// Interfaz de entradas del blog
 export interface IEntry {
     title: string;
     url: string;
