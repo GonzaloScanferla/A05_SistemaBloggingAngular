@@ -11,6 +11,7 @@ import { IEntry } from '../interfaces/ientry.interface';
 })
 export class FormComponent {
   newEntry : IEntry = {
+    id : 2,
     title : "",
     url: "",
     body:"",
@@ -24,7 +25,15 @@ export class FormComponent {
     if (this.verifyNewEntry() == false) {
       alert ("¡Todos los campos son obligatorios!")
     } else {
+      this.newEntry.id += 1
       this.sendNewEntry.emit(this.newEntry)
+      this.newEntry = {
+        id : this.newEntry.id,
+        title : "",
+        url: "",
+        body:"",
+        date: ""
+      }
     }
   }
 

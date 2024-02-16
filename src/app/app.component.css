@@ -1,0 +1,9 @@
+.header-wrap {
+    padding: 0 20px;
+}
+.news-wrap {
+    border-top: 3px solid  rgb(139, 29, 48);
+    border-radius: 15px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.404);
+}
